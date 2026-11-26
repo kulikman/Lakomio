@@ -1,9 +1,9 @@
 ---
-description: Safe AI coding workflow for Template-Projects
+description: Safe AI coding workflow for Lakomio
 alwaysApply: true
 ---
 
-You are working in `kulikman/Template-Projects`.
+You are working in `kulikman/Lakomio`.
 
 Read repository instructions before coding:
 1. `AGENTS.md`

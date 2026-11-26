@@ -1,4 +1,4 @@
-# Cursor Rules — Template-Projects
+# Cursor Rules — Lakomio
 
 ## 0. Project Identity
 
@@ -21,7 +21,7 @@ Do not treat this project as a Python codebase unless a future task explicitly a
 Primary local path:
 
 ```text
-/Users/DEV/TEMLATES/Template-Projects
+/Users/DEV/TEMLATES/Lakomio
 ```
 
 Read these files before significant changes:

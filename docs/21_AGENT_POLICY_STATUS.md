@@ -70,7 +70,7 @@ Source inventory: `docs/18_AGENT_REPO_INVENTORY.md`
 
 | Repo | Path | Remote | Stack signals |
 | --- | --- | --- | --- |
-| Template-Projects | TEMLATES/Template-Projects | https://github.com/kulikman/Template-Projects.git | Next.js 16.2.6, React, Supabase, Stripe, Docker, Supabase local, verify script |
+| Lakomio | TEMLATES/Lakomio | https://github.com/kulikman/Lakomio.git | Next.js 16.2.6, React, Supabase, Stripe, Docker, Supabase local, verify script |
 | 2SkyCRM | Архив/2SkyCRM | https://github.com/kulikman/crm-2skymobile.git | React, Vite, Supabase, Supabase local |
 | polymarket-edge | Архив/Polymarket/polymarket-edge | https://github.com/kulikman/polymarket-edge.git | Next.js 15.3.1, React, Docker |
 | Chip | Разное/KAHURA/Chip | none | unknown |

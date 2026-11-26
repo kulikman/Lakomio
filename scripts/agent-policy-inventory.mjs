@@ -306,7 +306,7 @@ function renderReport(repos) {
     "",
     "- Stack signals are inferred from files and `package.json`; they are audit hints, not authoritative architecture labels.",
     "- Dirty counts come from `git status --short`; this report does not modify target repositories.",
-    "- Missing `.agent-policy-version` means the repository has not yet declared compatibility with the Template-Projects policy source.",
+    "- Missing `.agent-policy-version` means the repository has not yet declared compatibility with the Lakomio policy source.",
     "- Archived or legacy folders are included when they are real git repositories under the scanned root.",
     ""
   );

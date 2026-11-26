@@ -1,6 +1,6 @@
-# Template-Projects
+# Lakomio
 
-Template Projects — Standardized project templates and conventions for kulikman ecosystem.
+Lakomio — Standardized project templates and conventions for kulikman ecosystem.
 
 **Stack:** Next.js / React  
 **Last updated:** 2026-07-29

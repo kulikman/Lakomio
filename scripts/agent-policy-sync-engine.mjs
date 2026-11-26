@@ -201,7 +201,7 @@ function createOrUpdatePr(slug, branch, defaultBranch, version, changed) {
   if (existing) return existing;
 
   const body = [
-    "Automated PR-only propagation from `kulikman/Template-Projects`.",
+    "Automated PR-only propagation from `kulikman/Lakomio`.",
     "",
     `Policy version: \`${version}\``,
     "",

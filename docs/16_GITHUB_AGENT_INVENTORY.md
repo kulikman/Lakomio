@@ -18,7 +18,7 @@ At the time of this audit, the `kulikman` profile exposes 5 public repositories:
 2. `neosim-web`
 3. `open-design-kit`
 4. `Secret-project`
-5. `Template-Projects`
+5. `Lakomio`
 
 Coverage status:
 
@@ -43,7 +43,7 @@ Important note:
 | `neosim-web` | 2026-06-17 19:53 | HTML | yes | yes | 10 | 6 | 8 | 7 | 3 | 3 | 1 | no |
 | `open-design-kit` | 2026-05-18 09:28 | none | no | no | 0 | 0 | 0 | 0 | 0 | 0 | 0 | no |
 | `Secret-project` | 2026-06-19 16:09 | TypeScript | yes | yes | 9 | 7 | 8 | 9 | 3 | 3 | 2 | no |
-| `Template-Projects` | 2026-06-19 16:05 | TypeScript | yes | yes | 5 | 7 | 8 | 9 | 3 | 3 | 1 | no |
+| `Lakomio` | 2026-06-19 16:05 | TypeScript | yes | yes | 5 | 7 | 8 | 9 | 3 | 3 | 1 | no |
 
 ## Repository Details
 
@@ -147,9 +147,9 @@ Notes:
 - good candidate as a reference repo for Claude/Cursor standardization
 - no standalone `.codex/`
 
-### `Template-Projects`
+### `Lakomio`
 
-Repo: <https://github.com/kulikman/Template-Projects>
+Repo: <https://github.com/kulikman/Lakomio>
 
 Present:
 
@@ -199,7 +199,7 @@ Notes:
 
 ### Partial but strong setups
 
-- `Template-Projects`
+- `Lakomio`
 - `neosim-web`
 
 ### Main gap
@@ -211,7 +211,7 @@ Notes:
 1. Decide whether `AGENTS.md` alone is enough for Codex, or whether you want a real `.codex/` layer across repos.
 2. Pick one reference standard:
    - `Secret-project` if you want the richest current setup
-   - `Template-Projects` if you want a clean template-first standard
+   - `Lakomio` if you want a clean template-first standard
 3. Bootstrap `open-design-kit` with at least:
    - `AGENTS.md`
    - `CLAUDE.md`
@@ -222,9 +222,9 @@ Notes:
    - `architecture.mdc`
 5. Normalize Claude commands across repos if you want one shared operational surface.
 
-## Follow-Up Applied In Template-Projects
+## Follow-Up Applied In Lakomio
 
-After this inventory, `Template-Projects` was upgraded with the most reusable
+After this inventory, `Lakomio` was upgraded with the most reusable
 cross-repo operational layer:
 
 - Claude commands added:
@@ -250,4 +250,4 @@ multiple product repositories without pulling in narrow domain assumptions.
 - `neosim-web`: <https://github.com/kulikman/neosim-web>
 - `open-design-kit`: <https://github.com/kulikman/open-design-kit>
 - `Secret-project`: <https://github.com/kulikman/Secret-project>
-- `Template-Projects`: <https://github.com/kulikman/Template-Projects>
+- `Lakomio`: <https://github.com/kulikman/Lakomio>

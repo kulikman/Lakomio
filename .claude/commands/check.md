@@ -1,4 +1,4 @@
-Act as a strict senior engineer and architect for Template Projects.
+Act as a strict senior engineer and architect for Lakomio.
 
 Do not commit. Do not push.
 

@@ -1,4 +1,4 @@
-Act as a strict senior engineer and architect for Template Projects.
+Act as a strict senior engineer and architect for Lakomio.
 
 Prepare safe commit and push only if the user explicitly asked to push/ship/deploy.
 

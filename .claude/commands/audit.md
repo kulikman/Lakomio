@@ -1,4 +1,4 @@
-Act as a strict senior architect for Template Projects.
+Act as a strict senior architect for Lakomio.
 
 Before moving to another large task:
 

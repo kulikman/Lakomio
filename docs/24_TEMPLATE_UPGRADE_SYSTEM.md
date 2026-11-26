@@ -16,7 +16,7 @@ sync is safer than a full template-management migration.
 
 Use this order:
 
-1. Keep `Template-Projects` as the canonical policy source.
+1. Keep `Lakomio` as the canonical policy source.
 2. Generate inventory with `pnpm agent:inventory`.
 3. Generate dashboard with `pnpm agent:status`.
 4. Validate policy with `pnpm agent:policy-check`.

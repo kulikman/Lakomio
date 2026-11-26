@@ -36,7 +36,7 @@ Current policy version: `1.0.0`
 | neosim-web | Neosim/neosim-web | Next.js 16.2.6, React, Supabase, verify script | main | 1 | missing | yes | yes | 12 | 9 | 7 | 1 | no | https://github.com/kulikman/neosim-web.git |
 | Secret-project | Secret-project | Next.js 16.2.6, React, Supabase, Docker, Supabase local, verify script | codex/awakening-map-graph-admin | 0 | missing | yes | yes | 11 | 9 | 7 | 2 | no | https://github.com/kulikman/Secret-project.git |
 | Open-design-kit | TEMLATES/Open-design-kit | unknown | main | 0 | current (1.0.0) | yes | no | 6 | 1 | 4 | 1 | no | https://github.com/kulikman/open-design-kit.git |
-| Template-Projects | TEMLATES/Template-Projects | Next.js 16.2.6, React, Supabase, Stripe, Docker, Supabase local, verify script | main | 0 | current (1.0.0) | yes | yes | 14 | 8 | 17 | 2 | no | https://github.com/kulikman/Template-Projects.git |
+| Lakomio | TEMLATES/Lakomio | Next.js 16.2.6, React, Supabase, Stripe, Docker, Supabase local, verify script | main | 0 | current (1.0.0) | yes | yes | 14 | 8 | 17 | 2 | no | https://github.com/kulikman/Lakomio.git |
 | Theta Aurion | Theta Aurion | Next.js 16.2.6, React, Supabase, Stripe, Docker, Supabase local, verify script | main | 0 | missing | yes | yes | 13 | 9 | 7 | 2 | no | https://github.com/kulikman/theta-aurion.git |
 | 2SkyCRM | Архив/2SkyCRM | React, Vite, Supabase, Supabase local | main | 0 | missing | no | no | 0 | 0 | 0 | 0 | no | https://github.com/kulikman/crm-2skymobile.git |
 | polymarket-edge | Архив/Polymarket/polymarket-edge | Next.js 15.3.1, React, Docker | main | 0 | missing | no | yes | 0 | 0 | 0 | 0 | no | https://github.com/kulikman/polymarket-edge.git |
@@ -46,5 +46,5 @@ Current policy version: `1.0.0`
 
 - Stack signals are inferred from files and `package.json`; they are audit hints, not authoritative architecture labels.
 - Dirty counts come from `git status --short`; this report does not modify target repositories.
-- Missing `.agent-policy-version` means the repository has not yet declared compatibility with the Template-Projects policy source.
+- Missing `.agent-policy-version` means the repository has not yet declared compatibility with the Lakomio policy source.
 - Archived or legacy folders are included when they are real git repositories under the scanned root.

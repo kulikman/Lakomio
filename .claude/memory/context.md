@@ -6,7 +6,7 @@
 
 ---
 
-## Audit & Cursor (Template-Projects)
+## Audit & Cursor (Lakomio)
 
 - **`audit/`** — `rules.json`, `AUDIT_PROMPT.md`, `audit-history.json`, `conflicts.log`; инструкция в `audit/README.md`.
 - **`.cursorrules`** — приоритет: `CLAUDE.md` → эта память → `audit/rules.json`.
@@ -19,7 +19,7 @@
 ## Current Session
 
 **Last Updated:** 2026-04-24
-**Project:** Template-Projects (`package.json`: `template-projects`)
+**Project:** Lakomio (`package.json`: `lakomio`)
 **Current Feature:** Breadcrumbs, URL hierarchy, test setup, llms.txt, audit rules
 **Status:** `done`
 

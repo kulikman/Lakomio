@@ -2,7 +2,7 @@
 
 Updated: 2026-06-20
 
-`Template-Projects` is the canonical source for Solo Founder Agent OS policy
+`Lakomio` is the canonical source for Solo Founder Agent OS policy
 files. The policy source lives under `solo-founder-os/` and is versioned by
 `.agent-policy-version`.
 

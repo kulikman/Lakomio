@@ -2,12 +2,12 @@
 
 Updated: 2026-06-20
 
-This document defines how to roll out Template-Projects agent policy changes to
+This document defines how to roll out Lakomio agent policy changes to
 other repositories.
 
 ## Rollout Stages
 
-1. Update policy source in `Template-Projects`.
+1. Update policy source in `Lakomio`.
 2. Run `pnpm verify`.
 3. Run `pnpm agent:inventory`.
 4. Run `pnpm agent:status`.
@@ -43,7 +43,7 @@ Review these manually before merge:
 ## PR Review Checklist
 
 - Confirm the PR only changes files listed in `.github/agent-policy-sync.yml`.
-- Confirm `.agent-policy-version` matches `Template-Projects`.
+- Confirm `.agent-policy-version` matches `Lakomio`.
 - Confirm no `AGENTS.md`, `CLAUDE.md`, `.claude/`, `.cursor/` or workflow files
   were changed by the sync PR.
 - Run target repository checks that actually exist.
@@ -67,7 +67,7 @@ set. It must not push directly to target `main` branches.
 If a policy sync PR is wrong:
 
 1. Close the PR.
-2. Fix the source policy in `Template-Projects`.
+2. Fix the source policy in `Lakomio`.
 3. Run `pnpm verify`.
 4. Re-run sync in dry-run mode.
 5. Re-open sync PRs only after the diff is correct.
