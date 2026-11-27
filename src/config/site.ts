@@ -1,16 +1,5 @@
-/**
- * Static site metadata. Build-time only — anything user-tunable belongs
- * in env vars consumed via `getServerEnv()` / `getClientEnv()`.
- *
- * `siteConfig.url` is just a fallback for build-time `metadataBase` and
- * deterministic OG image URLs in tests; runtime origin should be read
- * from `getClientEnv().NEXT_PUBLIC_APP_URL`.
- *
- * `nav[].href` is intentionally `string`. `<Link href={...}>` consumers
- * widen it to `Route` automatically (Next 16 typed routes are enabled
- * in `next.config.ts`), so a typo in a path will fail `tsc` at the call
- * site without forcing a `Route` import here.
- */
+import { routes } from "@/config/routes";
+
 export interface NavItem {
   title: string;
   href: string;
@@ -27,18 +16,13 @@ export interface SiteConfig {
 
 export const siteConfig = {
   name: "Lakomio",
-  description: "Lakomio — Next.js 16 + Supabase SaaS starter.",
+  description: "Лучшие десерты рядом — от проверенных локальных кондитеров.",
   url: "http://localhost:3000",
-  // Generated dynamically at /opengraph-image (see src/app/opengraph-image.tsx).
-  // Override per-route by adding app/<route>/opengraph-image.tsx.
   ogImage: "/opengraph-image",
-  links: {
-    github: "https://github.com/kulikman/Lakomio",
-  },
+  links: { github: "https://github.com/kulikman/Lakomio" },
   nav: [
-    { title: routes.home.label, href: routes.home.href },
-    { title: routes.pricing.label, href: routes.pricing.href },
-    { title: routes.dashboard.label, href: routes.dashboard.href },
+    { title: routes.catalog.label, href: routes.catalog.href },
+    { title: routes.seller.label, href: routes.seller.href },
   ],
 } as const satisfies SiteConfig;
-import { routes } from "@/config/routes";
+

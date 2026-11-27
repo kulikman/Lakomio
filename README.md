@@ -1,26 +1,34 @@
 # Lakomio
 
-Lakomio — Standardized project templates and conventions for kulikman ecosystem.
+Lakomio — маркетплейс локальных десертов от проверенных кондитеров.
 
-**Stack:** Next.js / React  
-**Last updated:** 2026-07-29
+Покупатель выбирает конкретное изделие, дату, доставку или самовывоз. Кондитер получает витрину, заказы и рабочий кабинет. Первый рынок — Волгоград.
 
-## Getting Started
+## Текущая фаза
+
+**Phase 1 — Platform Foundation**
+
+- Next.js 16 / React 19;
+- Supabase Auth, Postgres и RLS;
+- вход по номеру телефона;
+- роли buyer, seller, support, moderator, finance и admin;
+- базовые пространства покупателя, кондитера и администратора;
+- бренд-система Chocolate Atelier;
+- CI, аудит, уведомления и наблюдаемость.
+
+## Запуск
 
 ```bash
-# Install dependencies
 pnpm install
-
-# Run development server
-npm run dev
-# or pnpm dev
-
+cp .env.example .env.local
+pnpm dev
 ```
 
-## Documentation
+## Проверка
 
-See the [`docs/`](./docs) directory for detailed documentation.
+```bash
+pnpm verify
+```
 
-## License
+Документация: [`docs/`](./docs/README.md).
 
-Private — All rights reserved.

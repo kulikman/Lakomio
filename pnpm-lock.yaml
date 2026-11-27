@@ -63,9 +63,6 @@ importers:
       next:
         specifier: 16.3.8
         version: 16.3.8(@babel/core@7.29.7)(@opentelemetry/api@1.9.1)(@playwright/test@1.59.1)(@types/node@25.6.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      next-themes:
-        specifier: ^0.4.6
-        version: 0.4.6(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       posthog-js:
         specifier: ^1.391.2
         version: 1.391.2
@@ -78,18 +75,12 @@ importers:
       react-dom:
         specifier: 19.2.5
         version: 19.2.5(react@19.2.5)
-      recharts:
-        specifier: ^3.10.1
-        version: 3.10.1(@types/react@19.2.14)(react-dom@19.2.5(react@19.2.5))(react-is@16.13.1)(react@19.2.5)(redux@5.0.1)
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
       sonner:
         specifier: ^1.7.4
         version: 1.7.4(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      stripe:
-        specifier: ^22.1.0
-        version: 22.1.0(@types/node@25.6.0)
       tailwind-merge:
         specifier: ^3.5.0
         version: 3.5.0

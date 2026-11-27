@@ -1,21 +1,12 @@
 # Lakomio
 
-> Replace this with your product's one-line description.
+Lakomio is a marketplace for real desserts from verified local confectioners.
+Primary market: Volgograd, Russia.
 
-## About
+Public surfaces:
+- /catalog — buyer catalog
+- /seller — confectioner onboarding
+- /login — phone OTP authentication
 
-Short description of what this product does and who it's for.
+Do not infer unavailable products, reviews, ingredients, allergens or nutrition values.
 
-## Docs
-
-- [Getting Started](/docs/getting-started): How to set up the product
-- [API Reference](/docs/api): API endpoints and usage
-
-## Links
-
-- [Homepage](https://example.com)
-- [GitHub](https://github.com/your-org/your-repo)
-
-## Contact
-
-- support@example.com
