@@ -44,11 +44,15 @@ export type ServerEnv = z.infer<typeof serverSchema>;
 export type ClientEnv = z.infer<typeof clientSchema>;
 
 export function getServerEnv(): ServerEnv {
-  return serverSchema.parse(process.env);
+  const result = serverSchema.safeParse(process.env);
+  if (!result.success) {
+    throw new Error(`Invalid environment variables:\n${z.prettifyError(result.error)}`);
+  }
+  return result.data;
 }
 
 export function getClientEnv(): ClientEnv {
-  return clientSchema.parse({
+  const result = clientSchema.safeParse({
     NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
@@ -57,19 +61,31 @@ export function getClientEnv(): ClientEnv {
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
   });
+  if (!result.success) {
+    throw new Error(`Invalid public environment variables:\n${z.prettifyError(result.error)}`);
+  }
+  return result.data;
 }
 
 export function getPublicMetadataEnv(): z.infer<typeof metadataSchema> {
-  return metadataSchema.parse({
+  const result = metadataSchema.safeParse({
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
     NEXT_PUBLIC_APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
   });
+  if (!result.success) {
+    throw new Error(`Invalid public metadata environment:\n${z.prettifyError(result.error)}`);
+  }
+  return result.data;
 }
 
 export function getPublicAnalyticsEnv(): z.infer<typeof analyticsSchema> {
-  return analyticsSchema.parse({
+  const result = analyticsSchema.safeParse({
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
   });
+  if (!result.success) {
+    throw new Error(`Invalid public analytics environment:\n${z.prettifyError(result.error)}`);
+  }
+  return result.data;
 }
 
