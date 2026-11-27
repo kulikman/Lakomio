@@ -12,7 +12,7 @@
  *   - Vercel Analytics and Speed Insights are whitelisted by default. Remove
  *     those lines if you don't use them.
  *
- * Adjust per project: if you integrate Stripe, PostHog, GA4, Intercom, etc.,
+ * Adjust per project: when integrating payment, analytics or support providers,
  * add their origins to the relevant directives.
  */
 

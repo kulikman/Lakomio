@@ -53,7 +53,7 @@ src/domain/        [Domain / Entities]
 - Route Handlers and Server Actions don't share a single interface
 
 ### D — Dependency Inversion
-- Use cases depend on interfaces, not concrete Supabase/Stripe classes
+- Use cases depend on interfaces, not concrete Supabase or payment-provider classes
 - Server Actions instantiate concrete implementations and inject them into use cases
 - Enables testing without mocking modules — pass stubs as function parameters
 

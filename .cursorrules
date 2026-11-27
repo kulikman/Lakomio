@@ -164,12 +164,12 @@ Do not create heavy route handlers:
 - Do not put business logic directly inside `src/app/api/**/route.ts`.
 - Route handlers should validate input, call feature/foundation use-cases, and return responses.
 
-Do not touch Stripe/payment zone unless explicitly requested:
+Do not touch payment and ledger modules unless explicitly requested:
 
 ```text
-src/app/api/stripe/*
-src/app/api/webhooks/stripe/*
-src/lib/stripe.ts
+src/app/api/payments/*
+src/app/api/webhooks/payments/*
+src/modules/payments/provider.ts
 src/lib/plan-limits.ts
 ```
 
@@ -320,5 +320,5 @@ When asked to audit:
 When asked to fix:
 
 - Fix Critical/High issues first.
-- Avoid Stripe/payment changes unless explicitly approved.
+- Avoid payment and ledger changes unless explicitly approved.
 - Run relevant checks and report what was not done.

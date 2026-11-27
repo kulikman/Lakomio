@@ -102,7 +102,7 @@
 
 /security добавь CSP headers и security headers в proxy.ts
 
-/security защита webhook от Stripe: верификация подписи
+/security защита webhook платёжного провайдера: верификация подписи
 
 /security аудит: какие данные могут утечь через client components в нашем стеке?
 

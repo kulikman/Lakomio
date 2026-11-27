@@ -17,7 +17,7 @@ Check:
 - `pnpm build`
 - required environment variables are documented and validated
 - auth flows are protected
-- Stripe/webhook flows verify signatures if enabled
+- Payment-provider webhooks verify signatures when enabled
 - email sending uses verified sender config if enabled
 - sitemap, robots, metadata, and `llms.txt` are present when relevant
 - analytics and error reporting are configured or explicitly deferred

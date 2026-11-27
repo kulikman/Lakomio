@@ -25,7 +25,7 @@ We aim to acknowledge reports within **48 hours** and provide a remediation time
 
 | In scope | Out of scope |
 |----------|-------------|
-| Authentication bypass | Third-party services (Supabase, Vercel, Stripe) |
+| Authentication bypass | Third-party services (Supabase, Vercel, payment and SMS providers) |
 | Authorization flaws | Rate-limit circumvention without exploitable impact |
 | Data exposure via API | Social engineering |
 | XSS / CSRF vulnerabilities | Spam or DoS |

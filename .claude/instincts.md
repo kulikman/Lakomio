@@ -225,7 +225,7 @@ This template is product-agnostic. When you choose a domain, common patterns inc
 - Financial amounts → store in smallest unit (cents), display formatted
 - Audit trail → add `created_at`, `updated_at`, `created_by` to all tables
 - Transactions → immutable records, never UPDATE, only INSERT
-- Subscription state → always read from `subscriptions` table, not Stripe directly
+- Payment state → always read from the internal ledger, not from a provider response
 
 ### Marketplace / E-commerce
 - Orders → immutable after confirmed; use status machine (pending → paid → shipped)

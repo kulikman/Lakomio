@@ -184,7 +184,7 @@ Secrets:
 - Is `service_role` client imported from client-side code?
 
 Payments:
-- Is the Stripe webhook signature verified?
+- Is the payment-provider webhook signature verified?
 - Is payment status derived from webhooks, not client payloads?
 
 Output:

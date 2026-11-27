@@ -1,56 +1,21 @@
-# Skill: /payments
+---
+name: payments
+description: Provider-neutral payment, ledger, refund and payout implementation for Lakomio.
+---
 
-## Trigger
-`/payments [Stripe, checkout, subscription, billing, webhook, portal task]`
+# Lakomio payments
 
-## Purpose
-Design and review payment flows with extra caution around money, state,
-webhooks, and idempotency.
+Use this skill for payment, refund, commission, seller balance and payout work.
 
-## Use when
+## Rules
 
-- adding Stripe checkout
-- creating subscription plans
-- changing billing states
-- handling Stripe webhooks
-- configuring customer portal flows
-- testing payment lifecycle scenarios
-
-## Process
-
-1. Read `CLAUDE.md`
-2. Read `.claude/rules/security.md`
-3. Inspect existing Stripe, webhook, and subscription code before proposing changes
-4. Define source of truth for payment state
-5. Verify webhook signature and idempotency behavior
-
-## Output
-
-```
-## Payments Task: [flow]
-
-### Source Of Truth
-- where state comes from
-
-### Flow
-- checkout
-- webhook
-- database update
-- user-visible state
-
-### Files
-- path
-
-### Tests
-- lifecycle cases
-
-### Risks
-- money/state edge case
-```
-
-## Guardrails
-
-- never trust client payloads for payment status
-- never skip Stripe webhook signature verification
-- never update subscription state without considering idempotency
-- ask before changing billing behavior or payment webhooks
+1. The internal double-entry ledger is the source of truth.
+2. Provider calls go through an adapter interface.
+3. Every write is idempotent.
+4. Webhook signatures are verified before processing.
+5. Provider events are stored before state transitions.
+6. One order belongs to one seller.
+7. Platform and seller-direct attribution must remain auditable.
+8. Never expose provider secrets to clients.
+9. Refund and payout state transitions require integration tests.
+10. A provider name is selected only after legal and commercial validation.

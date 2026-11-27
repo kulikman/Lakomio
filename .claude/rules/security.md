@@ -41,7 +41,7 @@
 - `src/lib/supabase/admin.ts`
 - `src/proxy.ts`
 - `src/types/database.ts`
-- `src/app/api/webhooks/stripe/**`
+- `src/app/api/webhooks/payments/**`
 - `src/app/auth/callback/**`
 
 ## Watch List

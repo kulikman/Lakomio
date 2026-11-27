@@ -62,7 +62,7 @@ Lead → Invoice — у лида может быть несколько инво
 ## Интеграции
 
 - [ ] Supabase (DB + Auth)
-- [ ] Stripe (payments)
+- [ ] bank/payment provider adapter
 - [ ] Resend (email)
 - [ ] [другое]
 
